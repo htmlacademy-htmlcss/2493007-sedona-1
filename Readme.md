@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина Губина](https://up.htmlacademy.ru/htmlcss-individual/1/user/2493007).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Изосимов](https://htmlacademy.ru/profile/id605037).
 
 ---
 
