@@ -84,19 +84,19 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="hotels-type" checked>
+                    <input class="control-input" type="radio" name="hotels-type" checked>
                     Гостиница
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="hotels-type">
+                    <input class="control-input" type="radio" name="hotels-type">
                     Мотель
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="hotels-type">
+                    <input class="control-input" type="radio" name="hotels-type">
                     Апартаменты
                   </label>
                 </li>
@@ -104,14 +104,15 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <label><input type="text" value="0">от</label>
-              <label>до<input type="text" value="9000"></label>
+              <label><input type="number" value="0">от</label>
+              <label>до<input type="number" value="9000"></label>
             </fieldset>
             <button class="button" type="submit">Применить</button>
             <button class="button" type="reset">Сбросить</button>
           </form>
           <section class="hotels-sorting">
-            <h3 class="visually-hidden">Сортировка отелей</h3>
+            <h2 class="visually-hidden">Каталог отелей</h2>
+            <p class="search">Найдено гостиниц: <span class="search-result">38</span></p>
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
@@ -126,6 +127,7 @@
             <a class="button-button-light" href="#">
               <span class="visually-hidden">Показать список</span>
             </a>
+            
             <ul class="hotel-list">
               <li class="hotel-list">
                 <a class="hotel-card-link" href="#">
@@ -136,6 +138,7 @@
                   <b class="hotel-preise">От 4000 ₽</b>
                 <a class="hotel-card-description" href="#">подробнее</a>
                 <a class="hotel-card-button" href="#">в избранное</a>
+                <p class="#"><span class="visually-hidden"> 4 звезды</span>Рейтинг:<span class="#"> 8,5</span></p>
                 
               </li>
               <li class="hotel-list">
@@ -147,7 +150,8 @@
                   <b class="hotel-preise">От 5000 ₽</b>
                 <a class="hotel-card-description" href="#">подробнее</a>
                 <a class="hotel-card-button" href="#">в избранное</a>
-                
+                <p class="#"><span class="visually-hidden"> 4 звезды</span>Рейтинг:<span class="#"> 9,2</span></p>
+
               </li>
               <li class="hotel-list">
                 <a class="hotel-card-link" href="#">
@@ -158,7 +162,8 @@
                   <b class="hotel-preise">От 2500 ₽</b>
                 <a class="hotel-card-description" href="#">подробнее</a>
                 <a class="hotel-card-button" href="#">в избранное</a>
-                
+                <p class="#"><span class="visually-hidden"> 3 звезды</span>Рейтинг:<span class="#"> 6,9</span></p>
+
               </li>
               <li class="hotel-list">
                 <a class="hotel-card-link" href="#">
@@ -169,7 +174,8 @@
                   <b class="hotel-preise">От 1500 ₽</b>
                 <a class="hotel-card-description" href="#">подробнее</a>
                 <a class="hotel-card-button" href="#">в избранное</a>
-                
+                <p class="#"><span class="visually-hidden"> 2 звезды</span>Рейтинг:<span class="#"> 5,0</span></p>
+
               </li>
             </ul>
             <ol class="pagination">
@@ -190,8 +196,6 @@
               
             </div>
           </section>
-
-       </header>
       </main>
     <body>
 
