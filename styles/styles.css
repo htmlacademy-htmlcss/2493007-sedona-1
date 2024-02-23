@@ -1,0 +1,14 @@
+body { 
+    /*background-color: tomato;*/
+}
+@font-face {
+    font-family:PT Sans; 
+    font-style: normal;
+    font-weight: 400;
+src: url(../fonts/ptsans-400.woff2) format("woff2");
+
+}
+
+body { 
+   font-family: PT Sans;
+}
