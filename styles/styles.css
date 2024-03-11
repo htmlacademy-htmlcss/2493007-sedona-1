@@ -59,6 +59,7 @@ body {
     line-height: 24px;
     text-align: center;
     text-decoration: none;
+    list-style: none;
 
 
 }
@@ -189,6 +190,14 @@ line-height: 28px;
     text-align: center;
     color: #333333;
 }
+
+.services-item--haus,
+.services-item--souvenirs {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+
+
 .search-description {
     font-weight: 400;
     font-size: 22px;
@@ -196,6 +205,18 @@ line-height: 28px;
     text-align: center;
     color: #333333;
 }
+
+.button-hotels-search {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #756157;
+}
+
 /*newsletter*/
 .newsletter{
     background-image: url(../images/main-page/Subscribe.jpg);
@@ -221,7 +242,200 @@ line-height: 28px;
     line-height: 26px;
 
 }
+.button-newsletter {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-align: center;
+}
+
+/*footer*/
+.page-footer {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.contact-phone {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #000000;
+}
 
 
+/*Catalog*/
 
-<img class="page-footer-img" src="./images/main-page/Subscribe.jpg" width="1200" height="415" alt="Вид на долину">
+.inner-header {
+    background-color: #000000;
+    color: #FFFFFF;
+    background-image: url(../images/catalog/catalog-filter.jpg);
+
+}
+
+
+.inner-header-title {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 78px;
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.catalog-filter-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.catalog-filter-list {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+}
+.button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: inherit;
+    border: none;
+}
+.button-apply {
+    background-color: #82B3D3;
+}
+.button-reset {
+    background-color: transparent;
+}
+
+.search {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+/*Сначала дешевые*/
+
+.select-control {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+/*Hotels*/
+
+.hotel-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.hotel-type {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    color: #333333;
+}
+
+.hotel-preise {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #333333;
+}
+
+/*подробнее*/
+
+.hotel-card-description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #756157;
+}
+
+/**/
+
+.hotel-card-button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    border: none;
+}
+
+.rating {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    text-transform: uppercase;
+    color: #333333;
+    background-color: #F2F2F2;
+    width: 140px;
+    height: 37px;
+    text-align: center;
+}
+
+
+.pagination-item {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 60px;
+    height: 60px;
+}
+.pagination-link-pagination-current {
+    color: #000000;
+    background-color: #F2F2F2;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 60px;
+    height: 60px;
+}
+
+.pagination-text {
+    width: 60px;
+    height: 60px;
+    background-color: #FFF;
+    color: #000000;
+    list-style: none;
+}

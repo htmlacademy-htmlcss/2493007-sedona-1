@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Каталог</title>
-
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
       <header class="page-header">
@@ -35,7 +35,7 @@
                 </button>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="#">Хочу сюда!</a>
+                <a class="navigation-link navigation-link-button" href="#">Хочу сюда!</a>
               </li>
             </ul>
           </nav>
@@ -53,10 +53,9 @@
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
-          </header>
-          
+
             <section class="catalog-hotels">
-              <h2 class="visually-hidden">Опции размещения</h2>          
+              <h2 class="visually-hidden">Опции размещения</h2>
               <form class="catalog-filter" action="https.//echo.htmlacademy.ru" method="get">
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -81,7 +80,7 @@
                     </li>
                   </ul>
                 </fieldset>
-    
+
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
@@ -115,11 +114,11 @@
                     <input type="number" value="9000">
                   </label>
                 </fieldset>
-                <button class="button" type="submit">Применить</button>
-                <button class="button" type="reset">Сбросить</button>
+                <button class="button button-apply" type="submit">Применить</button>
+                <button class="button button-reset" type="reset">Сбросить</button>
               </form>
             </section>
-  
+          </header>
             <section class="hotels-sorting">
               <h2 class="visually-hidden">Каталог отелей</h2>
               <p class="search">Найдено гостиниц: <span class="search-result">38</span></p>
@@ -128,16 +127,16 @@
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
               </select>
-              <a class="button button-border" href="#">
+              <a class="button-button-border" href="#">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
-              <a class="button button-light" href="#">
+              <a class="button-button-light" href="#">
                 <span class="visually-hidden">Показать одну карточку</span>
               </a>
-              <a class="button button-light" href="#">
+              <a class="button-button-light" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
-              
+
               <ul class="hotel-list">
                 <li class="hotel-list">
                   <a class="hotel-card-link" href="#">
@@ -151,8 +150,8 @@
                   <p class="star star-4">
                     <span class="visually-hidden"> 4 звезды </span>
                   </p>
-                  <p class="#">Рейтинг: 8,5</p>
-                  
+                  <p class="rating">Рейтинг: 8,5</p>
+
                 </li>
                 <li class="hotel-list">
                   <a class="hotel-card-link" href="#">
@@ -166,7 +165,7 @@
                   <p class="star star-4">
                     <span class="visually-hidden"> 4 звезды </span>
                   </p>
-                  <p class="#">Рейтинг: 9,2</p>
+                  <p class="rating">Рейтинг: 9,2</p>
 
                 </li>
                 <li class="hotel-list">
@@ -181,8 +180,8 @@
                   <p class="star star-3">
                     <span class="visually-hidden"> 3 звезды </span>
                   </p>
-                  <p class="#">Рейтинг: 6,9</p>
-  
+                  <p class="rating">Рейтинг: 6,9</p>
+
                 </li>
                 <li class="hotel-list">
                   <a class="hotel-card-link" href="#">
@@ -195,13 +194,13 @@
                   <button type="button" class="hotel-card-button">в избранное</button>
                   <p class="star star-2">
                     <span class="visually-hidden"> 2 звезды </span>
-                  <p class="#">Рейтинг: 5,0</p>
-  
+                  <p class="rating">Рейтинг: 5,0</p>
+
                 </li>
               </ul>
               <ol class="pagination-list">
                 <li class="pagination-item">
-                  <a class="pagination-link pagination-current" href="#">1</a>
+                  <a class="pagination-link-pagination-current" href="#">1</a>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">2</a>
@@ -215,7 +214,7 @@
                 <li>
                   <span class="pagination-text">...</span>
                 </li>
-                <li>
+                <li class="pagination-item">
                   <a class="pagination-link" href="#">10</a>
                 </li>
               </ol>
@@ -260,10 +259,10 @@
               <img class="htmlacademy-link" src="./images/footer/logo-htmlacademy.svg" width="115" height="33" alt="логотип htmlacademy">
             </a>
           </section>
-    
+
       </footer>
     </body>
 
-    
+
 
 </html>
