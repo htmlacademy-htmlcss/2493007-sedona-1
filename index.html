@@ -54,8 +54,8 @@
            <ul class="advantages-list">
             <li class="advantages-item">
               <div class="advantages-description-town">
-                <h3 class="advantages-title-blue">Настоящий городок</h3>
-                <p class="advantages-subtitle-blue">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <h3 class="advantages-title">Настоящий городок</h3>
+                <p class="advantages-subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantages-img" src="./images/main-page/advantages-town.jpg" width="800" height="385" alt="Городок">
             </li>
@@ -74,8 +74,8 @@
             <li class="advantages-item">
               <img class="advantages-img" src="./images/main-page/advantages-canyon.jpg" width="800" height="385" alt="Каньон">
               <div class="advantages-description-kanyon">
-                <h3 class="advantages-title-blue">Там есть мост дьявола</h3>
-                <p class="advantages-subtitle-blue">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                <h3 class="advantages-title">Там есть мост дьявола</h3>
+                <p class="advantages-subtitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
            </ul>
@@ -106,11 +106,13 @@
           <a class="button-hotels-search" href="modal.html">ПОИСК ГОСТИНИЦЫ В Седоне</a>
         </section>
         <section class="newsletter">
+         <div class="newsletter-container">
           <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
           <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="#" method="post">
-            <input type="email" placeholder="Ваш e-mail" required>
+            <input class="e-mail-text" type="email" placeholder="Ваш e-mail" required>
             <button class="button-newsletter" type="submit">Подписаться</button>
+           </div>
           </form>
         </section>
 
@@ -121,18 +123,21 @@
         <h2 class="visually-hidden">социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
+            <a class="vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
+              <img src="./images/footer/social-vk.svg" alt="vk icon">
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy ">
+            <a class="telegram" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Телеграм</span>
+              <img src="./images/footer/social-telegram.svg" alt="telegram icon">
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб</span>
+              <img src="./images/footer/social-youtube.svg" alt="youtube icon">
             </a>
           </li>
         </ul>
@@ -149,8 +154,6 @@
       </section>
 
     </footer>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
 
   </body>
 </html>
