@@ -41,6 +41,7 @@
           </nav>
       </header>
       <main class="main-inner">
+        <section class="catalog-hotels">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -53,8 +54,7 @@
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
-
-            <section class="catalog-hotels">
+          </header>
               <h2 class="visually-hidden">Опции размещения</h2>
               <form class="catalog-filter" action="https.//echo.htmlacademy.ru" method="get">
                 <fieldset class="catalog-filter-group">
@@ -117,8 +117,8 @@
                 <button class="button button-apply" type="submit">Применить</button>
                 <button class="button button-reset" type="reset">Сбросить</button>
               </form>
-            </section>
-          </header>
+        </section>
+
             <section class="hotels-sorting">
               <h2 class="visually-hidden">Каталог отелей</h2>
               <p class="search">Найдено гостиниц: <span class="search-result">38</span></p>
@@ -138,7 +138,7 @@
               </a>
 
               <ul class="hotel-list">
-                <li class="hotel-list">
+                <li class="hotel-item">
                   <a class="hotel-card-link" href="#">
                     <img class="hotel-card-img" src="images/catalog/hotels/hotel-1.jpg" width="300" height="212" alt="Пейзаж">
                     <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -153,7 +153,7 @@
                   <p class="rating">Рейтинг: 8,5</p>
 
                 </li>
-                <li class="hotel-list">
+                <li class="hotel-item">
                   <a class="hotel-card-link" href="#">
                     <img class="hotel-card-img" src="images/catalog/hotels/hotel-2.jpg" width="300" height="212" alt="Пейзаж">
                     <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -168,7 +168,7 @@
                   <p class="rating">Рейтинг: 9,2</p>
 
                 </li>
-                <li class="hotel-list">
+                <li class="hotel-item">
                   <a class="hotel-card-link" href="#">
                     <img class="hotel-card-img" src="images/catalog/hotels/hotel-3.jpg" width="300" height="212" alt="Пейзаж">
                     <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -183,7 +183,7 @@
                   <p class="rating">Рейтинг: 6,9</p>
 
                 </li>
-                <li class="hotel-list">
+                <li class="hotel-item">
                   <a class="hotel-card-link" href="#">
                     <img class="hotel-card-img" src="images/catalog/hotels/hotel-4.jpg" width="300" height="212" alt="Пейзаж">
                     <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -220,13 +220,15 @@
               </ol>
             </section>
             <section class="newsletter">
-              <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-              <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-              <form class="newsletter-form" action="#" method="post">
-                <input type="email" placeholder="Ваш e-mail" required>
-                <button class="button-newsletter" type="submit">Подписаться</button>
-              </form>
-            </section>
+              <div class="newsletter-container">
+               <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+               <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+               <form class="newsletter-form" action="#" method="post">
+                 <input class="e-mail-text" type="email" placeholder="Ваш e-mail" required>
+                 <button class="button-newsletter" type="submit">Подписаться</button>
+                </div>
+               </form>
+             </section>
       </main>
       <footer class="page-footer">
           <section class="footer-social">
