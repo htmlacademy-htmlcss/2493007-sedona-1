@@ -35,16 +35,23 @@
     font-display: swap;
 
 }
+html {
+    height: 100%;
+}
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family:"PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
     background: #FFFFFF;
+
     margin: 0;
 
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -62,16 +69,55 @@ body {
 .page-header {
     color: #000000;
     background-color: #FFFFFF;
-    text-align: center;
     list-style: none;
+    list-style-type: none;
+
 
 }
+.navigation-container{
+    display: flex;
+    height: 64px;
+    padding: 0 70px;
+}
 
-.navigation-list {
-    list-style-type: none;
+
+
+.navigation {
     display: flex;
 
 }
+
+
+.navigation-list {
+   max-width: 339px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.logo{
+ padding-right: 30px;
+}
+
+.navigation-item {
+    list-style-type: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navigation-list--navigation-user {
+    max-width: 268px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+
 .navigation-link {
     font-weight: 700;
     font-size: 20px;
@@ -91,6 +137,9 @@ body {
     text-transform: uppercase;
 
 }
+.main-container {
+    flex-grow: 1;
+}
 
 .hero {
     color:#000000;
@@ -103,6 +152,7 @@ body {
     text-align: center;
     margin: 0;
     background-size: cover;
+    align-items: center;
 
 }
 .hero-welcome {
@@ -110,6 +160,15 @@ body {
     object-fit: contain;
     margin: 0 auto;
 
+}
+
+.greetings-container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    padding: 69px 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .greetings-title,
@@ -137,12 +196,35 @@ body {
 .advantages-list {
     list-style: none;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: start;
+}
 
+
+.advantages-img {
+    align-self: stretch;
+}
+
+h3 {
+    min-width: 400px;
+
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
 }
 
 .advantages-item {
     background-color: #82B3D3;
     color: #FFFFFF;
+    display: flex;
+    width: 1200PX;
+    margin: 0;
 }
 
 
@@ -150,11 +232,17 @@ body {
 .advantages-item-tourists {
     background-color: rgba(131, 179, 211, 0.12);
     color: #000000;
+    width: 400px;
+    height: 385px;
+    margin: 0;
 }
 
 .advantages-item-road {
     background-color: rgba(131, 179, 211, 0.2);
     color: #000000;
+    width: 400px;
+    height: 385px;
+    margin: 0;
 
 }
 
@@ -173,6 +261,7 @@ body {
     font-weight: 400;
     line-height: 21px;
     color: #333333;
+    width: ;
 }
 
 /*services*/
@@ -180,6 +269,9 @@ body {
 .services-list {
     text-decoration: none;
     list-style-type: none;
+
+    display: flex;
+    justify-content: start;
 }
 
 .services-title-haus,
@@ -191,6 +283,9 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
+
+    width: 400px;
+    height: 385px;
     text-align: center;
 
 }
@@ -309,6 +404,20 @@ body {
 }
 
 /*footer*/
+.page-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1060px;
+    margin: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+
+
 .page-footer {
     text-decoration: none;
     font-style: normal;
@@ -318,6 +427,7 @@ body {
 .footer-social-list{
     list-style-type: none;
     display: flex;
+
 
 }
 
@@ -377,6 +487,11 @@ body {
     font-weight: 700;
     line-height: 24px;
     text-transform: capitalize;
+}
+
+.catalog-filter {
+    display: flex;
+    align-items: center;
 }
 
 .catalog-filter-list {
