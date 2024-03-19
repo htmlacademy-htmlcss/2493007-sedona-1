@@ -5,6 +5,7 @@
     <title>Седона.Городок в Аризоне</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <header class="page-header">
      <div class="navigation-container">
@@ -30,11 +31,10 @@
             </a>
           </li>
           <li class="navigation-item">
-            <button type="button">
+            <a class="navigation-link--nav-likes" href="#">
               <span class="visually-hidden">Избранное</span>
-
-              <span>12</span>
-            </button>
+              <span class="likes">12</span>
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-button" href="#">Хочу сюда!</a>
@@ -43,6 +43,7 @@
       </nav>
      </div>
     </header>
+
     <main class="main-container main-index">
 
         <h1 class="visually-hidden">Отдых в городе Седона</h1>
@@ -50,9 +51,10 @@
           <h2 class="visually-hidden">О Седоне</h2>
           <img class="hero-welcome" src="images/main-page/hero-welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </section>
+
         <section class="advantages">
           <div class="greetings-container">
-            <p class="greetings-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
+            <p class="greetings-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
             <p class="greetings-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
            <h2 class="visually-hidden">Преимущества</h2>
@@ -85,10 +87,13 @@
             </li>
            </ul>
         </section>
-        <section class="services">
-          <h2 class="visually-hidden">Инфраструктура</h2>
-          <p class="services-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="services-description">Опытный персонал и качественное обслуживание!</p>
+
+        <section class="services-container">
+          <div class="services-title-container">
+            <h2 class="visually-hidden">Инфраструктура</h2>
+            <p class="services-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="services-description">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="services-list">
             <li class="services-item services-item--haus">
               <h3 class="services-title-haus">Жильё</h3>
@@ -104,12 +109,14 @@
             </li>
           </ul>
         </section>
+
         <section class="hotels-search">
           <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
           <p class="hotels-search-title">Заинтересовались?</p>
           <p class="search-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button-hotels-search" href="modal.html">ПОИСК ГОСТИНИЦЫ В Седоне</a>
         </section>
+
         <section class="newsletter">
          <div class="newsletter-container">
           <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
@@ -122,8 +129,10 @@
         </section>
 
     </main>
+
     <footer class="page-footer">
       <div class="page-footer-container">
+
         <section class="footer-social">
           <h2 class="visually-hidden">социальные сети</h2>
           <ul class="footer-social-list">
@@ -147,6 +156,7 @@
             </li>
           </ul>
         </section>
+
         <section class="footer-contact">
           <h2 class="visually-hidden">Телефон</h2>
           <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
