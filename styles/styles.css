@@ -600,6 +600,20 @@ h3 {
     color: #333333;
 }
 
+.sorting-container {
+    display: flex;
+    height: 49px;
+
+}
+
+.view-sorting {
+    display: flex;
+    width: 160px;
+    margin-left: 70px;
+    justify-content: space-between;
+    background-color: #82B3D3;
+}
+
 
 /*Hotels*/
 
