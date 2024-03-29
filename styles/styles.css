@@ -28,10 +28,7 @@ html {
 
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    margin: 0 auto;
+    height: 100%;
     min-width: 1200px;
     justify-content: center;
 
@@ -67,7 +64,7 @@ body {
 }
 
 .navigation-container{
-    
+
 }
 
 
@@ -88,7 +85,7 @@ body {
     list-style: none;
     margin: 0;
     padding-left: 30px;
-    
+
 }
 
 .logo{
@@ -144,12 +141,17 @@ body {
 
 }
 .main-container {
-    flex-grow: 1;
+    flex: 1 1 auto;
+
 }
 
 .page-container {
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
 }
 
 .hero {
@@ -192,7 +194,7 @@ body {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    
+
 
 }
 .greetings-description,
@@ -288,7 +290,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
 }
-    
+
 
 .services-list {
     text-decoration: none;
@@ -356,9 +358,9 @@ h3 {
     height: 52px;
     border-radius: 4px;
 
-   
+
     padding: 8px 50px;
-    
+
 
 }
 
@@ -455,6 +457,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     min-width: 1200px;
+    min-height: 120px;
     margin: 0 auto;
     padding-left: 70px;
     padding-right: 70px;
@@ -473,8 +476,16 @@ h3 {
 .footer-social-list{
     list-style-type: none;
     display: flex;
+    padding: 0;
+    margin: 0;
 
+}
 
+.footer-social-item {
+    display: flex;
+    width: 48px;
+    height: 40px;
+    align-items: center;
 }
 
 
@@ -629,11 +640,14 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 .hotel-item {
     width: 340px;
     height: 438px;
+    padding: 20px;
 }
 
 
@@ -740,7 +754,13 @@ h3 {
     text-transform: uppercase;
     width: 60px;
     height: 60px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
 
 .pagination-text {
     width: 60px;
@@ -751,6 +771,16 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+}
+
+.pagination-item {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #82B3D3;
+    border-radius: 4px;
 }
 
 /*Подпишитесь на рассылку*/
