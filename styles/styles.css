@@ -239,6 +239,12 @@ h3 {
     display: flex;
     flex-wrap: wrap;
 
+    padding: 103px 85px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
 }
 .advantages-item-image {
     background-color: #82B3D3;
@@ -255,6 +261,19 @@ h3 {
    /* width: 400px;
     height: 385px;
     margin: 0;*/
+}
+
+.advantages-description-town,
+.advantages-description-kanyon
+{
+    display: flex;
+    width: 400px;
+    height: 385px;
+    padding: 103px 85px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .advantages-item-road {
