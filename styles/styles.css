@@ -550,6 +550,7 @@ h3 {
     font-weight: 700;
     line-height: 24px;
     text-transform: capitalize;
+    padding-bottom: 32px;
 }
 
 .catalog-filter {
@@ -557,12 +558,33 @@ h3 {
     align-items: center;
 }
 
+.catalog-filter-group{
+    padding: 0;
+    border: none;
+    width: 151px;
+    height: 157px;
+}
+
 .catalog-filter-list {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 23px;
+    list-style: none;
+    padding: 0;
 }
+
+/*Инфраструктура:*/
+
+.catalog-filter-group.infra {
+    margin-right: 70px;
+}
+
+.catalog-filter-group.preise {
+    margin-left: auto;
+    margin-right: 70px;
+}
+
 
 .filter-preise{
     font-size: 18px;
@@ -570,6 +592,15 @@ h3 {
     font-weight: 700;
     color: #000000;
     font-family: inherit;
+}
+
+
+.button-filter-container {
+    width: 191px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .button {
@@ -584,10 +615,20 @@ h3 {
 }
 .button-apply {
     background-color: #82B3D3;
+    display: flex;
+    padding: 8px 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 32px;
 
 }
 .button-reset {
     background-color: transparent;
+    display: flex;
+    padding: 8px 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -605,6 +646,7 @@ h3 {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
+    width: 338px;
 }
 
 /*Сначала дешевые*/
@@ -615,6 +657,7 @@ h3 {
     font-weight: 400;
     line-height: 21px;
     color: #333333;
+    width: 292px;
 }
 
 .sorting-container {
@@ -648,7 +691,10 @@ h3 {
     width: 340px;
     height: 438px;
     padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #E6E6E6;
 }
+
 
 
 .hotel-card-link {
@@ -729,6 +775,7 @@ h3 {
     width: 400px;
     justify-content: space-between;
     margin: 0;
+    padding: 0;
 }
 
 
@@ -771,6 +818,10 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pagination-item {
