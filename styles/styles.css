@@ -157,19 +157,25 @@ body {
 }
 
 .hero {
-    color:#000000;
+    color:#FFFFFF;
     background-color: #057993;
     background-image: url("../images/main-page/hero-background.jpg");
-    width: 100%;
+
     min-height: 485px;
-    display: flex;
-    background-repeat: no-repeat;
+    padding: 51px 70px 80px;
+
     text-align: center;
-    margin: 0;
+
     background-size: cover;
     align-items: center;
 
 }
+
+.row {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
 .hero-welcome {
     max-width: 458px;
     object-fit: contain;
@@ -178,9 +184,9 @@ body {
 }
 
 .greetings-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 261px;
+    display: grid;
+
+
     padding: 70px 0;
     justify-content: center;
     align-items: center;
@@ -229,11 +235,10 @@ body {
     align-self: stretch;
 }
 
-h3 {
-    margin: auto;
-    text-align: center;
-}
 
+.advantages-subtitle {
+    margin: 0;
+}
 
 .advantages-item {
     width: 400px;
@@ -293,6 +298,7 @@ h3 {
     font-style: normal;
     line-height: 28px;
     text-transform: uppercase;
+    margin: 0 0 30px;
 
 }
 
@@ -434,6 +440,7 @@ h3 {
     line-height: 36px;
     text-transform: uppercase;
 
+
 }
 
 .page-footer-description {
@@ -543,7 +550,7 @@ h3 {
     background-color: #000000;
     color: #FFFFFF;
     background-image: url(../images/catalog/catalog-filter.jpg);
-    background-repeat: no-repeat;
+
     background-size: cover;
     width: 100%;
     min-height: 412px;
