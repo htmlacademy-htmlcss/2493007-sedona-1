@@ -179,7 +179,8 @@ body {
 .hero-welcome {
     max-width: 458px;
     object-fit: contain;
-    margin: 0 auto;
+
+    display: block;
 
 }
 
