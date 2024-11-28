@@ -97,10 +97,7 @@ body {
 
 .navigation-item {
     list-style-type: none;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
 }
 
 .navigation-list--navigation-user {
@@ -119,6 +116,8 @@ body {
     text-align: center;
     text-decoration: none;
     color: #000000;
+    padding: 20px 16px;
+    display: block;
 }
 
 .navigation-link--nav-likes{
