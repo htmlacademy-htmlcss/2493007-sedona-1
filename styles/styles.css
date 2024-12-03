@@ -370,11 +370,11 @@ body {
 
 
 .search-description {
-    font-weight: 400;
+    /*font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-    color: #333333;
+    color: #333333;*/
 }
 
 .button-hotels-search {
@@ -424,7 +424,7 @@ body {
 }
 
 .newsletter-container {
-    font-family:"PT Sans", "Arial", sans-serif;
+    /*font-family:"PT Sans", "Arial", sans-serif;*/
     padding: 96px 258px 104px 258px;
     flex-direction: column;
     justify-content: center;
