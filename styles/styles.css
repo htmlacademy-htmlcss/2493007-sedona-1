@@ -576,7 +576,11 @@ body {
     font-weight: 400;
     line-height: 21px;
 }
-
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
 .catalog-filter-title {
     font-size: 20px;
     font-style: normal;
