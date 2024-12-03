@@ -30,7 +30,6 @@ html {
 body {
     height: 100%;
     min-width: 1200px;
-    justify-content: center;
 
     font-family:"PT Sans", "Arial", sans-serif;
     font-size: 18px;
