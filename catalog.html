@@ -126,7 +126,7 @@
         </section>
 
             <section class="hotels-container">
-              <div class="sorting-container">
+              <header class="sorting-container">
                 <h2 class="visually-hidden">Каталог отелей</h2>
                 <p class="search">Найдено гостиниц: <span class="search-result">38</span></p>
                 <select class="select-control" aria-label="Сортировка">
@@ -134,18 +134,25 @@
                   <option value="expensive">Сначала дорогие</option>
                   <option value="popular">Сначала популярные</option>
                 </select>
-                <section class="view-sorting">
-                  <a class="button-button-border" href="#">
+                <ul class="view-sorting">
+                  <li class="view-hotels">
+                    <a class="button-button-border" href="#">
                     <span class="visually-hidden">Показать карточки</span>
-                  </a>
-                  <a class="button-button-light" href="#">
+                   </a>
+                  </li>
+                  <li class="view-hotels">
+                    <a class="button-button-light" href="#">
                     <span class="visually-hidden">Показать одну карточку</span>
                   </a>
-                  <a class="button-button-light" href="#">
+                  </li>
+                  <li class="view-hotels">
+                    <a class="button-button-light" href="#">
                     <span class="visually-hidden">Показать список</span>
                   </a>
-                </section>
-              </div>
+                  </li>
+
+                </ul>
+              </header>
 
 
               <ul class="hotel-list">
