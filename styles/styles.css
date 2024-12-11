@@ -70,8 +70,7 @@ body {
 
 .navigation {
     display: flex;
-    height: 64px;
-    min-width: 1200px;
+
     margin: 0 auto;
 
 }
@@ -88,7 +87,7 @@ body {
 }
 
 .logo {
-    margin-bottom: 0px;
+    margin-bottom: -6px;
 }
 
 .navigation-item {
@@ -96,7 +95,6 @@ body {
 }
 
 .navigation-user {
-
     display: flex;
     align-items: center;
     margin: 0 0 0 auto;
@@ -113,12 +111,21 @@ body {
     display: block;
 }
 
-.navigation-link--nav-likes{
+.navi-user {
+  min-width: 44px;
+  min-height: 64px;
+  background-color: beige;
+  display: block;
+}
+
+.nav-likes {
     background-image: url("../images/header/favorites.svg");
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
+    margin-right: 20px;
 }
+
 
 /*кнопка хочу сюда*/
 .navi {
@@ -242,15 +249,13 @@ body {
     margin: 0;
 }
 
-.advantages-item-squere,
-.advantages-item-tourists {
+.item-light {
     background-color: rgba(131, 179, 211, 0.12);
     color: #000000;
 
 }
 
-.advantages-description-town,
-.advantages-description-kanyon
+.advantages-big-block
 {
     display: flex;
     width: 400px;
@@ -262,11 +267,9 @@ body {
     gap: 10px;
 }
 
-.advantages-item-road {
+.item-grey {
     background-color: rgba(131, 179, 211, 0.2);
     color: #000000;
-
-
 }
 
 .advantages-title {
@@ -276,7 +279,6 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     margin: 0 0 30px;
-
 }
 
 .advantages-description {
@@ -360,11 +362,10 @@ body {
 
 .hotels-search {
     display: flex;
-    padding: 96px 304px;
+    padding: 96px 130px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
 }
 
 /*newsletter*/
