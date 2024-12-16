@@ -19,7 +19,7 @@ html {
     height: 100%;
 }
 
-*::before,
+*,*::before,
 *::after {
     box-sizing: border-box;
 }
@@ -270,6 +270,7 @@ body {
     font-weight: 400;
     line-height: 21px;
     color: #333333;
+    margin: 30px 0 0 0;
 }
 
 /*services*/
@@ -302,6 +303,7 @@ body {
     text-transform: uppercase;
     color: #000000;
     text-align: center;
+    margin: 0 0 30px;
 }
 .services-description-about {
     font-size: 18px;
@@ -310,11 +312,13 @@ body {
     line-height: 21px;
     text-align: center;
     color: #333333;
+    margin: 0;
 }
 
 .services-item{
     height: 385px;
     width: 400px;
+    padding: 81px 85px;
 }
 
 .services-item--haus,
@@ -375,12 +379,16 @@ body {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .page-footer-description {
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 54px;
 }
 
 .newsletter-form {
@@ -440,6 +448,7 @@ body {
 .footer-social-list{
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
 }
@@ -449,6 +458,7 @@ body {
     width: 48px;
     height: 40px;
     align-items: center;
+    justify-content: center;
 }
 
 .contact-phone {
@@ -493,11 +503,20 @@ body {
     margin: 0;
 }
 
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0 0 40px;
+    padding: 0;
+}
+
 .breadcrumbs-link {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
+    margin-right: 28px;
 }
 
 .catalog-filter-title {
@@ -621,16 +640,28 @@ body {
 
 .sorting-container {
     display: flex;
-    height: 49px;
+    min-height: 49px;
+    margin-bottom: 40px;
 }
 
 .view-sorting {
     display: flex;
-    width: 160px;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #82B3D3;
     list-style: none;
     margin: 0;
+    padding: 0;
+}
+
+.view-hotels {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+}
+
+.view-hotels:last-child {
+  margin-right: 0;
 }
 
 .button-button-border {
@@ -727,10 +758,12 @@ body {
     width: 140px;
     height: 37px;
     text-align: center;
+    margin: 0;
 }
 .star {
        height: 17px;
        width: 105px;
+       margin: 0;
      }
 .star::before {
        content: '';
@@ -815,6 +848,7 @@ body {
 .page-footer-description.catalog {
     color: #333333;
 }
+
 .e-mail-text.catalog {
     background-color: #F2F2F2;
 }
