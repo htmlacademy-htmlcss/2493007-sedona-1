@@ -73,6 +73,8 @@ body {
 
 .logo {
     margin-bottom: -6px;
+    z-index: 0;
+    position: relative;
 }
 
 .navigation-item {
@@ -112,20 +114,27 @@ body {
 }
 
 /*кнопка хочу сюда*/
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: inherit;
+  border: none;
+  text-decoration: none;
+}
+
 .navi {
     width: 160px ;
-    height: 36px;
     border-radius: 4px;
     padding: 8px 34px 8px 34px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
     color: #FFFFFF;
     background-color: #756157;
-    text-align: center;
-    text-transform: uppercase;
     margin: auto 0;
   }
+
 .main-container {
     flex: 1 1 auto;
 }
@@ -238,11 +247,10 @@ body {
 
 }
 
-.advantages-big-block
-{
+.advantages-big-block {
     display: flex;
     width: 400px;
-    height: 385px;
+    min-height: 385px;
     padding: 103px 85px;
     flex-direction: column;
     justify-content: center;
@@ -576,17 +584,7 @@ body {
     justify-content: flex-end;
 }
 
-.button {
-    font-family: "PT Sans", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: inherit;
-    border: none;
-    text-decoration: none;
-}
+
 
 .button-apply {
     background-color: #82B3D3;
