@@ -723,6 +723,10 @@ body {
   grid-column: 1/-1;
 }
 
+.hotel-card-img {
+  display: block;
+}
+
 .hotel-card-title {
   font-size: 24px;
   font-weight: 700;
@@ -784,6 +788,11 @@ body {
 }
 .hotel-card-button:active {
   background-color: #7DB54F;
+}
+
+.button-green {
+  background-color: #7DB54F;
+  padding: 8px 18px;
 }
 
 .rating {
