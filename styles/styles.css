@@ -714,6 +714,7 @@ body {
   grid-template-columns: 140px 140px;
   gap: 16px 20px;
   align-items: start;
+  grid-template-rows: 1fr auto;
 }
 
 .hotel-card-link {
