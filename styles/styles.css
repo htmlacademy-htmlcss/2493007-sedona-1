@@ -115,6 +115,22 @@ body {
   background-position: center;
   width: 20px;
   height: 20px;
+  position: relative;
+}
+
+.likes {
+  position: absolute;
+  top: 11px;
+  right: 4px;
+  min-width: 20px;
+  border-radius: 10px;
+  background-color: #7db54f;
+  min-height: 20px;
+  line-height: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  padding: 5px;
 }
 
 /*кнопка хочу сюда*/
@@ -550,6 +566,16 @@ body {
   margin-right: 28px;
 }
 
+.link-main {
+  display: block;
+  background-image: url("../images/catalog/haus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 12px;
+  min-height: 12px;
+  margin: 5px 10px 0 0;
+}
+
 .catalog-filter-title {
   font-size: 20px;
   font-weight: 700;
@@ -689,7 +715,7 @@ body {
 
 
 .card-grid-toggle-current {
-  border: 2px solid #060606;
+  border: 2px solid #000000;
 }
 
 /*Отели*/
@@ -725,6 +751,7 @@ body {
 
 .hotel-card-img {
   display: block;
+  margin-bottom: 16px;
 }
 
 .hotel-card-title {
@@ -734,7 +761,6 @@ body {
   text-decoration: none;
   color: #000000;
   margin: 0;
-  margin-top: 16px;
 }
 
 .card-text {
