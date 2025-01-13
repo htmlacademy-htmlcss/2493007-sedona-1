@@ -361,6 +361,47 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.services--img {
+
+}
+
+.services-item--haus::before {
+  content: '';
+  background-image: url(../images/main-page/services-icon/services-haus.svg);
+  display: block;
+	width: 75px;
+	height: 72px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+  margin: 0 75px 30px;
+}
+
+.services-item--food::before {
+  content: '';
+  background-image: url(../images/main-page/services-icon/services-food.svg);
+  display: block;
+	width: 75px;
+	height: 72px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+  margin: 0 75px 30px;
+}
+
+.services-item--souvenirs::before {
+  content: '';
+  background-image: url(../images/main-page/services-icon/services-gift.svg);
+  display: block;
+	width: 75px;
+	height: 72px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+  margin: 0 75px 30px;
+}
+
+
 .button-hotels-search {
   text-transform: uppercase;
   text-decoration: none;
