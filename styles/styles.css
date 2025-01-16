@@ -807,7 +807,7 @@ body {
   border-radius: 4px;
   border: 1px solid #e6e6e6;
   display: grid;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: 1fr 1fr;
   gap: 16px 20px;
   align-items: start;
   grid-template-rows: 1fr auto;
@@ -869,6 +869,22 @@ body {
  height: 36px;
  padding: 8px 16px;
 }
+.hotel-card-description:hover {
+  background-color:#615048;
+}
+
+.hotel-card-description:active {
+  background-color:#615048;
+}
+.hotel-card-description:current {
+  background-color: #756157;
+  color: #FFFFFF4D;
+}
+
+.hotel-card-description:disabled {
+  background-color: #E5E5E5;
+  opacity: ;
+}
 
 /*кнопка в избранное*/
 
@@ -885,9 +901,37 @@ body {
   background-color: #7DB54F;
 }
 
+.hotel-card-button:current {
+  background-color: #82B3D3;
+  color: #FFFFFF4D;
+}
+
+.hotel-card-button:disabled {
+  background-color: #E5E5E5;
+  opacity: 70%;
+}
+
 .button-green {
   background-color: #7DB54F;
   padding: 8px 18px;
+}
+
+.button-green:hover {
+  background-color: #6C9E42;
+  transition: 0.7s;
+}
+.button-green:active {
+  background-color: #6C9E42;
+}
+
+.button-green:current {
+  background-color:#7DB54F;
+  opacity: 70%;
+}
+
+.button-green:disabled {
+  background-color: #E5E5E5;
+  opacity: 70%;
 }
 
 .rating {
