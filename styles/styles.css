@@ -754,10 +754,39 @@ body {
   border-radius: 4px;
 }
 
-
-.card-grid-toggle-current {
-  border: 2px solid #000000;
+.card-grid-toggle:hover {
+  border-color: #000000;
 }
+
+.card-grid-toggle:active {
+  border-color: #68a2ca;
+}
+
+.card-grid-toggle:current {
+  border-color: #000000;
+}
+
+.card-all {
+  background-image: url(../images/catalog/view-all.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.card-one {
+  background-image: url(../images/catalog/view-one.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.card-list {
+  background-image: url(../images/catalog/view-list.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
 
 /*Отели*/
 
@@ -838,7 +867,7 @@ body {
 .hotel-card-description {
  width: 140px;
  height: 36px;
- padding: 8px 26px;
+ padding: 8px 16px;
 }
 
 /*кнопка в избранное*/
@@ -846,7 +875,6 @@ body {
 .hotel-card-button {
   background-color: #82b3d3;
   width: 140px;
-  height: 36px;
   padding: 8px 20px;
 }
 .hotel-card-button:hover {
@@ -878,12 +906,13 @@ body {
 }
 
 .star {
-  height: 17px;
+  height: 37px;
   width: 105px;
   margin: 0;
 }
 
 .star::before {
+  margin-top: 9px;
   content: '';
   display: block;
   height: 17px;
