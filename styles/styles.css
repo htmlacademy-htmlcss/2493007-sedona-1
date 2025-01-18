@@ -162,6 +162,7 @@ body {
 }
 
 .page-container {
+  background-color: #ffffff;
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -180,7 +181,6 @@ body {
   padding: 51px 70px 80px;
   text-align: center;
   background-size: 1200px 57px, cover;
-  align-items: center;
 }
 
 .row {
@@ -726,9 +726,9 @@ body {
 /*Сначала дешевые*/
 
 .select-control {
-  font-family: "PT Sans", sans-serif;
+  appearance: none;
+  font-family: inherit;
   font-size: 18px;
-  font-weight: 400;
   line-height: 21px;
   color: #333333;
   width: 292px;
@@ -737,6 +737,26 @@ body {
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   background-color: #ffffff;
+  padding: 12px 20px;
+  padding-right: 40px;
+  background-image: url("../images/catalog/choose.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.select-control:hover {
+  border-color: #68A2CA;
+}
+
+.select-control:focus {
+  border-color: #3f5e72;
+  outline: none;
+}
+
+.select-control:disabled {
+  border-color:#000000;
+  opacity: 30%;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-container {
