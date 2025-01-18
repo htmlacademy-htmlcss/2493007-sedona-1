@@ -725,10 +725,32 @@ body {
 .scale {
   max-width: 287px;
   height: 4px;
-  background-color: rgb(84, 84, 84);
+  background-color: rgba(255, 255, 255, 1);
   margin-top: 35px;
+  position: relative;
+}
+.dot-min {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -8px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
+.dot-max {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 186px;
+  top: -8px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
 
 .button-filter-container {
   width: 191px;
