@@ -116,7 +116,6 @@ body {
 .navi-user {
   min-width: 44px;
   min-height: 64px;
-  background-color: beige;
   display: block;
   background-image: url("../images/header/search.svg");
   background-repeat: no-repeat;
@@ -304,7 +303,7 @@ body {
   display: flex;
   width: 400px;
   min-height: 385px;
-  padding: 103px 85px;
+  padding: 102px 85px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -329,15 +328,10 @@ body {
   display: block;
   height: 2px;
   width: 60px;
-  background-color: #000000;
+  background-color: currentColor;
   opacity: 30%;
   margin: 30px auto 0;
 }
-.advantages-title:last-child,:first-child::after {
-  background-color: #FFFFFF;
-  opacity: 30%;
-}
-
 .advantages-description {
   color: #333333;
   margin: 0;
@@ -570,6 +564,14 @@ body {
   text-decoration: none;
 }
 
+.contact-phone:hover {
+ color: #756157;
+}
+
+.contact-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+ }
+
 .footer-website-developer {
   justify-self: end;
   margin: 5px 0;
@@ -726,31 +728,33 @@ body {
   max-width: 287px;
   height: 4px;
   background-color: rgba(255, 255, 255, 1);
-  margin-top: 35px;
+  margin-top: 44px;
   position: relative;
 }
-.dot-min {
+
+.dot-scale {
   position: absolute;
   width: 20px;
   height: 20px;
   top: -8px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
   border: none;
   cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.dot-min {
 }
 
 .dot-max {
-  position: absolute;
-  width: 20px;
-  height: 20px;
+
   left: 186px;
-  top: -8px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
 }
+
+.dot-scale:active {
+  border: 2px solid #83B3D3
+}
+
 
 .button-filter-container {
   width: 191px;
@@ -878,6 +882,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
+}
+
+.card-current {
+  border: 2px solid #000000;
 }
 
 .card-one {
