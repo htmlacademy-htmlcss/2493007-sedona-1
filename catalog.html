@@ -109,13 +109,23 @@
             </fieldset>
             <fieldset class="catalog-filter-group preise">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <label><input class="filter-preise" type="number" value="0">
-                <span>от</span>
-              </label>
-              <label>
-                <span>до</span>
-                <input class="filter-preise" type="number" value="9000">
-              </label>
+              <div class="input-preise">
+                <label>
+                  <input class="filter-preise" type="number" value="0">
+                  <span>от</span>
+                </label>
+                <label>
+                  <span>до</span>
+                  <input class="filter-preise" type="number" value="9000">
+                </label>
+              </div>
+              <div class="scale">
+                <section class="scale-buttons">
+                  <button type="button" class="dot-min"></button>
+                  <button type="button" class="dot-max"></button>
+                </section>
+              </div>
+
             </fieldset>
             <div class="button-filter-container">
               <button class="button button-apply" type="submit">Применить</button>
