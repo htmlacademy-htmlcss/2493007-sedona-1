@@ -550,6 +550,23 @@ body {
   width: 48px;
   height: 40px;
 }
+.vk,
+.telegram,
+.youtube:hover {
+  color: #68a2ca;
+}
+
+.social{
+  color: currentColor;
+}
+
+.vk,
+.telegram,
+.youtube:active {
+  color: rgba(104, 162, 202, 0.3);
+}
+
+
 
 .footer-contact {
   margin: 5px 0;
@@ -624,8 +641,9 @@ body {
   background-image: url("../images/catalog/forward.svg");
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 7px;
-  min-height: 10px;
+  background-size: contain;
+  width: 7px;
+  height: 10px;
 }
 
 .breadcrumbs-link {
@@ -648,6 +666,8 @@ body {
 
 .breadcrumbs-item {
   margin-right: 10px;
+  display: flex;
+  align-items: start;
 }
 
 .catalog-filter-title {
