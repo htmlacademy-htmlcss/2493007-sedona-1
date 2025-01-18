@@ -98,6 +98,21 @@ body {
   display: block;
 }
 
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  background-color: #756257;
+  height: 2px;
+  bottom: 0;
+}
+
+
 .navi-user {
   min-width: 44px;
   min-height: 64px;
