@@ -195,16 +195,33 @@
                 </svg></a>
           </section>
 
-
-
       </footer>
-      <div class="modal-container">
+      <!-- модальное окно -->
+      <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-date" action="" method="get">
+              <label class="modal-date-in" for="check-in">Дата заезда:
+                <input type="text">
+              </label>
+              <label class="modal-date-out" for="check-in">Дата Выезда:
+                <input type="text">
+              </label>
+              <div class="people">
+                <label class="adults" for="">Взрослые:
+                  <input type="number">
+                </label>
+                <label class="children" for="">Дети:
+                  <input type="number">
+                </label>
+              </div>
+              <button type="button" class="button-modal">Найти</button>
+
+            </form>
           </section>
         </div>
       </div>

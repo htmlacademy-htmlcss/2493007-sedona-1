@@ -653,6 +653,10 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+modal-container-close {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -662,11 +666,11 @@ body {
   width: 717px;
 }
 
-modal-close-button {
+.modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
+  top: 64px;
+  right: 52px;
   width: 20px;
   height: 20px;
   background-color:#f2f2f2;
@@ -679,7 +683,36 @@ modal-close-button {
   cursor: pointer;
 }
 
+.modal-title {
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 64px;
+}
 
+.modal-date {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.button-modal {
+  width: 577px;
+  height: 60px;
+  color: #ffffff;
+  background-color: #83b3d3;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: none;
+
+}
 /*Catalog*/
 
 .navigation-link-navigation-link-current {
@@ -812,11 +845,22 @@ modal-close-button {
   height: 48px;
   padding: 12px 20px;
   padding-right: 40px;
+  border: none;
+  margin-bottom: 36px;
 }
 
-.filter-preise {
+.preise-min {
+  border-radius: 4px 0 0 4px;
+}
+
+.preise-max {
+  border-radius: 0 4px 4px 0;
+}
+
+.preise-range {
   position: relative;
 }
+
 
 .input-preise span {
   position: absolute;
@@ -828,14 +872,41 @@ modal-close-button {
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
+  transform: translateY(-50%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .scale {
   max-width: 287px;
-  height: 4px;
-  background-color: rgba(255, 255, 255, 1);
-  margin-top: 44px;
+  height: 20px;
   position: relative;
+}
+
+.scale-buttons {
+  background-color:#5E676B;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scale-buttons::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 196px;
+  background-color: #ffffff;
 }
 
 .dot-scale {
@@ -1112,12 +1183,14 @@ modal-close-button {
 .hotel-card-button {
   background-color: #82b3d3;
   width: 140px;
-  padding: 8px 20px;
+  padding: 8px 18px;
 }
+
 .hotel-card-button:hover {
   background-color: #68a2ca;
   transition: 0.7s;
 }
+
 .hotel-card-button:active {
   background-color: #7DB54F;
 }
@@ -1141,6 +1214,7 @@ modal-close-button {
   background-color: #6C9E42;
   transition: 0.7s;
 }
+
 .button-green:active {
   background-color: #6C9E42;
 }
