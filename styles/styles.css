@@ -824,6 +824,39 @@ modal-container-close {
   margin-right: 70px;
 }
 
+.control{
+  margin-bottom: 16px;
+  display: block;
+}
+
+.control-input {
+  width: 20px;
+  height: 20px;
+  background-color:#ffffff;
+  border-radius: 4px;
+  margin: 0 16px 0 0;
+}
+
+/* /.control-input[type="checkbox"]:checked {
+  content: '';
+  width: 12px;
+  height: 12px;
+  display: block;
+  background-image: url('../images/catalog/check.svg');
+  background-repeat: no-repeat;
+  position: relative;
+} */
+
+.radio:checked::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 2px;
+  margin: 5px;
+}
+
 .catalog-filter-group.preise {
   margin-left: auto;
   margin-right: 70px;
@@ -871,7 +904,7 @@ modal-container-close {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 1);
+  color: #aaaaaa;
   transform: translateY(-50%);
 }
 
