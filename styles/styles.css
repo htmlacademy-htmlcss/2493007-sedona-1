@@ -521,6 +521,7 @@ body {
   width: 100%;
   min-height: 120px;
   padding: 40px 70px 30px;
+  gap: 20px;
 }
 
 .footer-social-list {
@@ -538,16 +539,18 @@ body {
   display: block;
   width: 48px;
   height: 40px;
-}
-
-
-.social-icon:hover {
-  color: #68a2ca;
+  color: #83b3d3;
 }
 
 .social{
   fill: currentColor;
 }
+
+.social-icon:hover {
+  color: #68a2ca;
+}
+
+
 
 .social-icon:active {
   color: rgba(104, 162, 202, 0.3);
