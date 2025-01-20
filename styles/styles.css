@@ -534,35 +534,22 @@ body {
 .footer-social-item {
 }
 
-.vk {
+.social-icon {
   display: block;
   width: 48px;
   height: 40px;
 }
 
-.telegram {
-  display: block;
-  width: 48px;
-  height: 40px;
-}
-.youtube {
-  display: block;
-  width: 48px;
-  height: 40px;
-}
-.vk,
-.telegram,
-.youtube:hover {
+
+.social-icon:hover {
   color: #68a2ca;
 }
 
 .social{
-  color: currentColor;
+  fill: currentColor;
 }
 
-.vk,
-.telegram,
-.youtube:active {
+.social-icon:active {
   color: rgba(104, 162, 202, 0.3);
 }
 
