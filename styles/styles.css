@@ -576,9 +576,6 @@ body {
   margin: 5px 0;
 }
 
-.footer-social-item {
-}
-
 .social-icon {
   display: flex;
   justify-content: center;
@@ -660,10 +657,11 @@ modal-container-close {
 .modal {
   position: relative;
   margin: auto;
-  margin-top: 396px;
   padding: 64px 70px;
   background-color: #FFFFFF;
   width: 717px;
+  border-radius: 30px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 .modal-close-button {
@@ -671,16 +669,26 @@ modal-container-close {
   padding: 0;
   top: 64px;
   right: 52px;
-  width: 20px;
-  height: 20px;
+  width: 52px;
+  height: 52px;
   background-color:#f2f2f2;
   border: none;
-  border-radius: 10px;
+  border-radius: 30px;
   background-image: url("../images/modal/close.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: auto;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  color: #ffffff99;
+  opacity: 0.6;
 }
 
 .modal-title {
@@ -693,10 +701,122 @@ modal-container-close {
   margin-bottom: 64px;
 }
 
+.modal-form {
+  display: grid;
+  grid-auto-rows:48px minmax(48px, auto) 48px minmax(48px, auto) 48px auto;
+  grid-template-columns: 137px 1fr;
+}
+
 .modal-date {
+  font-family: inherit;
+  color: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.text-input {
+  font-family: inherit;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: 3px solid transparent;
+  background: #f2f2f2;
+  min-width: 438px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url(../images/modal/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 400px;
+  cursor: pointer;
+}
+
+.text-input:disabled {
+  color: #d3d3d3;
+  cursor: default;
+}
+
+
+.modal-text {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0 0 23px 0;
+  padding: 0 0 0 20px;
+  grid-column: 2;
+}
+
+.text-error {
+  color: #ff5757;
+}
+
+.people {
+  grid-column: 1 / -1;
   display: flex;
-  flex-direction: column;
-  gap: 48px;
+  position: relative;
+}
+
+.modal-people {
+  min-width: 137px;
+ }
+
+.modal-people.children {
+ min-width: 131px;
+}
+
+.input-number  {
+  border: 3px solid transparent;
+  background: #f2f2f2;
+  width: 110px;
+  border-radius: 4px;
+  margin-right: 88px;
+  font-family: inherit;
+font-size: 18px;
+font-weight: 700;
+line-height: 20px;
+text-align: center;
+ }
+
+.input-number:last-child {
+  margin-right: 0;
+}
+
+.button-number {
+  width: 20px;
+  height: 20px;
+  padding: 10px 14px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  cursor: pointer;
+}
+
+.button-adults-minus {
+  background-image: url("../images/modal/min.svg");
+  left: 148px;
+  top: 14px;
+}
+
+.button-adults-plus {
+  background-image: url("../images/modal/max.svg");
+  top: 14px;
+  left: 212px;
+}
+
+.button-children-minus {
+  background-image: url("../images/modal/min.svg");
+  left: 475px;
+  top: 14px;
+}
+
+.button-children-plus {
+  background-image: url("../images/modal/max.svg");
+  left: 545px;
+  top: 14px;
 }
 
 .button-modal {
@@ -711,8 +831,23 @@ modal-container-close {
   text-transform: uppercase;
   border-radius: 10px;
   border: none;
-
+  cursor: pointer;
 }
+
+.button-modal:hover {
+  background-color: #68a2ca;
+}
+
+.button-modal:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+.button-modal:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82b3d3;
+}
+
 /*Catalog*/
 
 .navigation-link-navigation-link-current {
@@ -794,7 +929,7 @@ modal-container-close {
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
-  padding: 0 0 32px;
+  margin: 0 0 32px;
 }
 
 .catalog-filter {
@@ -816,7 +951,9 @@ modal-container-close {
   line-height: 23px;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
+
 
 /*Инфраструктура:*/
 
@@ -824,8 +961,11 @@ modal-container-close {
   margin-right: 70px;
 }
 
-.control{
+.catalog-filter-item {
   margin-bottom: 16px;
+}
+
+.control{
   display: block;
 }
 
@@ -847,7 +987,7 @@ modal-container-close {
   position: relative;
 } */
 
-.radio:checked::before {
+.control-input .radio:checked::before {
   content: '';
   display: block;
   width: 10px;
@@ -974,8 +1114,6 @@ input[type="number"] {
   justify-content: flex-end;
 }
 
-
-
 .button-apply {
   background-color: #82b3d3;
   display: flex;
@@ -986,12 +1124,42 @@ input[type="number"] {
   margin-bottom: 32px;
 }
 
+.button-apply:hover {
+  background-color: #68a2ca;
+  transition: 0.7s;
+}
+
+.button-apply:active {
+  background-color: #82b3d3;
+  opacity: 30%;
+}
+
+.button-apply:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+  cursor: default;
+}
+
 .button-reset {
   background-color: transparent;
   display: flex;
   padding: 8px 50px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.button-reset:hover {
+  opacity: 60%;
+}
+
+.button-reset:active {
+  opacity: 30%;
+}
+
+.button-reset:disabled {
+  opacity: 10%;
+  cursor: default;
 }
 
 .hotels-container {
@@ -1138,6 +1306,10 @@ input[type="number"] {
   grid-template-rows: 1fr auto;
 }
 
+.hotel-item:last-child {
+  margin-bottom: 40px;
+}
+
 .hotel-card-link {
   display: block;
   text-decoration: none;
@@ -1215,8 +1387,7 @@ input[type="number"] {
 
 .hotel-card-button {
   background-color: #82b3d3;
-  width: 140px;
-  padding: 8px 18px;
+  padding: 8px 16px;
 }
 
 .hotel-card-button:hover {
@@ -1225,13 +1396,10 @@ input[type="number"] {
 }
 
 .hotel-card-button:active {
-  background-color: #7DB54F;
+  background-color:#82b3d3;
+  opacity: 0.3;
 }
 
-.hotel-card-button:current {
-  background-color: #82B3D3;
-  color: #FFFFFF4D;
-}
 
 .hotel-card-button:disabled {
   background-color: #E5E5E5;
@@ -1248,11 +1416,11 @@ input[type="number"] {
   transition: 0.7s;
 }
 
-.button-green:active {
+.button-green:focus {
   background-color: #6C9E42;
 }
 
-.button-green:current {
+.button-green:active {
   background-color:#7DB54F;
   opacity: 70%;
 }

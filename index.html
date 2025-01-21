@@ -204,20 +204,27 @@
           </button>
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <form class="modal-date" action="" method="get">
-              <label class="modal-date-in" for="check-in">Дата заезда:
-                <input type="text">
+            <form class="modal-form" action="" method="get">
+              <label class="modal-date modal-date-in" for="check-in">Дата Заезда:
+
               </label>
-              <label class="modal-date-out" for="check-in">Дата Выезда:
-                <input type="text">
+              <input class="text-input" type="text" value="27 апреля 2020">
+              <p class="modal-text text-error">Мы не можем отправить вас в прошлое.</p>
+              <label class="modal-date modal-date-out" for="check-in">Дата Выезда:
+
               </label>
+              <input class="text-input" type="text" value="1 сентября 2023">
+              <p class="modal-text">На эти даты есть свободные номера. Пока есть.</p>
               <div class="people">
-                <label class="adults" for="">Взрослые:
-                  <input type="number">
+                <label class="modal-date modal-people adults" for="">Взрослые:</label>
+                <input class="input-number" type="number" value="2">
+                <button class="button-number button-adults-minus" type="button"></button>
+                <button class="button-number button-adults-plus" type="button"></button>
+                <label class="modal-date modal-people children" for="">Дети:
                 </label>
-                <label class="children" for="">Дети:
-                  <input type="number">
-                </label>
+                <input class="input-number" type="number" value="2">
+                <button class="button-number button-children-minus" type="button"></button>
+                <button class="button-number button-children-plus" type="button"></button>
               </div>
               <button type="button" class="button-modal">Найти</button>
 
