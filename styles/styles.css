@@ -867,25 +867,20 @@ text-align: center;
 
 .tooltip {
   position: absolute;
-  margin-top: 11px;
   margin-left: 10px;
   /*left: 395px;
   top: 11px;*/
   width: 26px;
   height: 26px;
-
 }
 
 .tooltip-toggle {
   border: none;
   /*background-color: #83B3D3;
   border-radius: 30px;*/
-
   padding: 0;
   margin: 0;
   display: block;
-
-
 }
 
 .tooltip-icon {
@@ -921,12 +916,11 @@ text-align: center;
   display: none;
 }
 
-/*.tooltip-text::after {
+.tooltip-text::after {
   content: '';
   background-image: url("../images/modal/tooltip-flag.svg");
-  background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
+
+
   width: 19px;
   height: 9px;
   position: absolute;
@@ -935,9 +929,7 @@ text-align: center;
   right:0;
   margin-left: auto;
   margin-right: auto;
-
-
-}*/
+}
 
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
@@ -994,6 +986,7 @@ text-align: center;
   background-size: contain;
   width: 7px;
   height: 10px;
+  margin-top: 5px;
 }
 
 .breadcrumbs-link {
@@ -1011,7 +1004,7 @@ text-align: center;
   background-position: center;
   min-width: 12px;
   min-height: 12px;
-  margin: 5px 10px 0 0;
+  margin: 4px 10px 0 0;
 }
 
 .breadcrumbs-item {
@@ -1053,6 +1046,7 @@ text-align: center;
 
 /*Инфраструктура:*/
 
+
 .catalog-filter-group.infra {
   margin-right: 70px;
 }
@@ -1062,10 +1056,12 @@ text-align: center;
 }
 
 .control{
+  position: relative;
   display: block;
 }
 
-.control-input {
+.control-mark {
+  position: absolute;
   width: 20px;
   height: 20px;
   background-color:#ffffff;
@@ -1101,6 +1097,7 @@ text-align: center;
 .input-preise {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 45px;
 }
 
 .filter-preise {
@@ -1115,7 +1112,6 @@ text-align: center;
   padding: 12px 20px;
   padding-right: 40px;
   border: none;
-  margin-bottom: 36px;
 }
 
 .preise-min {
@@ -1154,29 +1150,37 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.scale {
-  max-width: 287px;
-  height: 20px;
+.range-scale{
   position: relative;
+  height: 4px;
+  background-color: #5F686D;
+
+  /*max-width: 287px;
+  height: 20px;
+  position: relative;*/
+
 }
 
-.scale-buttons {
-  background-color:#5E676B;
+.range-bar {
+  /*background-color:#5E676B;
   height: 4px;
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%);*/
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
 }
 
-.scale-buttons::before {
+/*.scale-buttons::before {
   content: "";
   display: block;
   height: 4px;
   width: 196px;
   background-color: #ffffff;
-}
+}*/
 
 .dot-scale {
   position: absolute;
@@ -1189,16 +1193,20 @@ input[type="number"] {
   border-radius: 5px;
 }
 
-.dot-min {
+.dot-scale:hover {
+  background-color: #e5e5e5;
 }
+
+.dot-scale:active,
+.dot-scale:focus {
+  border: 2px solid #83B3D3
+}
+
+
+
 
 .dot-max {
-
-  left: 186px;
-}
-
-.dot-scale:active {
-  border: 2px solid #83B3D3
+  left: 212px;
 }
 
 
