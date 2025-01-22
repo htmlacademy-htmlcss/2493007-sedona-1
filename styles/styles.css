@@ -1058,6 +1058,7 @@ text-align: center;
 .control{
   position: relative;
   display: block;
+  padding-left: 36px ;
 }
 
 .control-mark {
@@ -1067,7 +1068,22 @@ text-align: center;
   background-color:#ffffff;
   border-radius: 4px;
   margin: 0 16px 0 0;
+  left: 0;
 }
+
+.control:hover .control-mark {
+  opacity: 0.6;
+}
+
+.control:active .control-mark {
+  opacity: 0.3;
+}
+
+.control:disabled .control-mark {
+  opacity: 0.1;
+  cursor: default;
+}
+
 
 /* /.control-input[type="checkbox"]:checked {
   content: '';
@@ -1077,7 +1093,7 @@ text-align: center;
   background-image: url('../images/catalog/check.svg');
   background-repeat: no-repeat;
   position: relative;
-} */
+}
 
 .control-input .radio:checked::before {
   content: '';
@@ -1087,6 +1103,11 @@ text-align: center;
   background-color: #3F5E72;
   border-radius: 2px;
   margin: 5px;
+}*/
+
+/* Радио */
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
 }
 
 .catalog-filter-group.preise {
