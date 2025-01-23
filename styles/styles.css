@@ -98,6 +98,10 @@ body {
   display: block;
 }
 
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
 .navigation-link-current {
   position: relative;
 }
@@ -741,7 +745,7 @@ modal-container-close {
   background: #f2f2f2;
   min-width: 438px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 40px;
   background-image: url(../images/modal/calendar.svg);
   background-repeat: no-repeat;
   background-position: 400px;
@@ -753,6 +757,11 @@ modal-container-close {
   background-color: #F2F2F2;
   line-height: 24px;
   font-family: inherit;
+}
+
+.choose-date[readonly] {
+  background: #f2f2f2;
+  color: #000000;
 }
 
 .choose-date:hover {
@@ -1689,12 +1698,12 @@ input[type="number"] {
   text-align: center;
 }
 
-.pagination-link:hover {
+.pagination-link:hover:not(.pagination-current):not(.pagination-text) {
   border: 1px solid #82b3d3;
   background-color:#68a2ca;
 }
 
-.pagination-link:active {
+.pagination-link:active:not(.pagination-current):not(.pagination-text) {
   background-color:#82b3d3;
   opacity: 0.3;
 }
