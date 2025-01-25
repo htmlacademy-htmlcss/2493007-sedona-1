@@ -725,6 +725,7 @@ modal-container-close {
   display: grid;
   grid-template-rows:minmax(48px, auto) minmax(48px, auto) 4minmax(48px, auto) minmax(48px, auto) minmax(48px, auto) minmax(48px, auto);
   grid-template-columns: 137px 1fr;
+  align-items: start;
 }
 
 .modal-date {
@@ -733,25 +734,26 @@ modal-container-close {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-top: 12px;
+  padding-top: 12px;
+  padding-right: 10px;
 }
 
 .choose-date {
   font-family: inherit;
-  color: #000000;
+  color: inherit;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   border-radius: 4px;
-  border: 3px solid transparent;
+  border: 0;
   background: #f2f2f2;
-  min-width: 438px;
   padding-left: 20px;
-  padding-right: 40px;
+  padding-right: 60px;
   background-image: url(../images/modal/calendar.svg);
   background-repeat: no-repeat;
-  background-position: 400px;
+  background-position: right 20px center;
   cursor: pointer;
+  height: 48px;
 }
 
 .choose-date::placeholder {
@@ -918,12 +920,17 @@ modal-container-close {
 }
 
 .tooltip-toggle {
-  border: none;
-  /*background-color: #83B3D3;
-  border-radius: 30px;*/
+  border: 0;
+  background-color: #83B3D3;
   padding: 0;
-  margin: 0;
   display: block;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-image: url("../images/modal/info.svg");
+  background-repeat: no-repeat;
+  background-position: right 3px center;
 }
 
 .tooltip-icon {
@@ -931,6 +938,10 @@ modal-container-close {
   height: 100%;
   color: #ffffff;
   display: block;
+}
+
+.tooltip-toggle:hover {
+  background-color: #83b3d39a;
 }
 
 .tooltip-text {
