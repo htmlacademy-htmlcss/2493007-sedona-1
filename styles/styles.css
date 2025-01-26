@@ -530,7 +530,7 @@ body {
   flex: 1 0 0;
   align-self: stretch;
   border-radius: 4px 0 0 4px;
-  border: none;
+  border: 1px solid transparent;
 }
 
 .e-mail-text:hover {
@@ -723,7 +723,7 @@ modal-container-close {
 
 .modal-form {
   display: grid;
-  grid-template-rows:minmax(48px, auto) minmax(48px, auto) 4minmax(48px, auto) minmax(48px, auto) minmax(48px, auto) minmax(48px, auto);
+  grid-template-rows:minmax(48px, auto) minmax(48px, auto) minmax(48px, auto) minmax(48px, auto) minmax(48px, auto) minmax(48px, auto);
   grid-template-columns: 137px 1fr;
   align-items: start;
 }
@@ -815,72 +815,79 @@ modal-container-close {
  min-width: 131px;
 }
 
+.modal-input-wraper{
+  background-color: #f2f2f2;
+  display: flex;
+ }
+
+
 .input-number  {
-  border: 3px solid transparent;
-  background: #f2f2f2;
-  width: 110px;
+  border: 0;
+  width: 31px;
+  height: 48px;
   border-radius: 4px;
-  margin-right: 88px;
   font-family: inherit;
  font-size: 18px;
  font-weight: 700;
  line-height: 20px;
  text-align: center;
+   background-color: inherit;
+   padding: 0;
  }
 
-.input-number:last-child {
+.modal-input-wraper:last-child {
   margin-right: 0;
 }
 
 .button-guests {
   width: 40px;
   height: 48px;
-  border: none;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
+  border: 0;
   cursor: pointer;
   background-color: transparent;
   margin: 0;
   padding: 0;
+  color:#756157;
   opacity: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-guests::before {
+  width: 20px;
+  height: 20px;
+  content: "";
+}
+
+.sign{
+  fill: currentColor;
 }
 
 .button-guests:hover {
-  opacity: 1;
+  color: #000000;
 }
 
 .button-guests:active {
-  opacity: 0.3;
+  fill: rgba(0, 0, 0, 1);
 }
+
 .button-guests:disabled {
   opacity: 0.1;
   cursor: default;
 }
 
-.button-adults-minus {
-  background-image: url("../images/modal/min.svg");
-  left: 138px;
+.button-guest:focus-visible:before {
+  outline: #057993;
 }
 
-.button-adults-plus {
-  background-image: url("../images/modal/max.svg");
-  left: 207px;
-}
 
-.button-children-minus {
-  background-image: url("../images/modal/min.svg");
-  left: 466px;
-}
 
-.button-children-plus {
-  background-image: url("../images/modal/max.svg");
-  left: 538px;
-}
 
 .button-modal {
   width: 577px;
   height: 60px;
+  padding: 0;
   color: #ffffff;
   background-color: #83b3d3;
   font-size: 20px;
@@ -1696,7 +1703,6 @@ input[type="number"] {
 }
 
 .pagination-link:hover:not(.pagination-current):not(.pagination-text) {
-  border: 1px solid #82b3d3;
   background-color:#68a2ca;
 }
 
