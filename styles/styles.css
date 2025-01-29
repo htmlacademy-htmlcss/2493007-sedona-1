@@ -869,12 +869,14 @@ modal-container-close {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
 }
 
 .button-guests::before {
   width: 20px;
   height: 20px;
   content: "";
+  position: relative;
 }
 
 .sign{
