@@ -1174,7 +1174,7 @@ modal-container-close {
 
 .control:hover .control-mark {
   opacity: 60%;
-  transition: 0.7s;
+  transition: color 0.25s ease-in-out;
 }
 
 .control:active .control-mark {
@@ -1187,7 +1187,7 @@ modal-container-close {
 }
 .control-label:hover {
 opacity: 60%;
-transition: 0.7s;
+transition: color 0.25s ease-in-out;
 }
 
 .control-label:active {
@@ -1351,7 +1351,7 @@ input[type="number"] {
 
 .button-apply:hover {
   background-color: #68a2ca;
-  transition: background-color 0.25s;
+  transition: background-color 0.25s ease-in-out;
 }
 
 .button-apply:active {
@@ -1630,7 +1630,7 @@ input[type="number"] {
 
 .hotel-card-button:hover {
   background-color: #68a2ca;
-  transition: background-color 0.25s;
+  transition: background-color 0.25s ease-in-out;
 }
 
 .hotel-card-button:active {
@@ -1650,7 +1650,7 @@ input[type="number"] {
 
 .button-green:hover {
   background-color: #6C9E42;
-  transition: 0.7s;
+  transition: color 0.25s ease-in-out;
 }
 
 .button-green:focus {
