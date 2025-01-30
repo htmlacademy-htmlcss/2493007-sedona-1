@@ -170,7 +170,7 @@ img {
   background-color: #e5e5e5;
 }
 
-.navi-user:active{
+.navi-user:active {
   background-color: #d3d3d385;
 }
 
@@ -219,7 +219,7 @@ img {
 }
 
 .navi:active {
-  background-color:#756157;
+  background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -245,7 +245,7 @@ img {
 .hero {
   color: #ffffff;
   background-color: #057993;
-  background-image:url("../images/main-page/hero-flag.svg"), url("../images/main-page/hero-background.jpg");
+  background-image: url("../images/main-page/hero-flag.svg"), url("../images/main-page/hero-background.jpg");
   background-repeat: no-repeat;
   background-position: center bottom 0px, center;
   min-height: 485px;
@@ -327,7 +327,7 @@ img {
 }
 
 .advantages-subtitle {
-  margin: 0 ;
+  margin: 0;
 }
 
 .advantages-item {
@@ -380,7 +380,7 @@ img {
 }
 
 .advantages-title::after {
-  content: "" ;
+  content: "";
   display: block;
   height: 2px;
   width: 60px;
@@ -388,6 +388,7 @@ img {
   opacity: 30%;
   margin: 30px auto 0;
 }
+
 .advantages-description {
   color: #333333;
   margin: 0;
@@ -446,11 +447,11 @@ img {
 .services--img::before {
   content: '';
   display: block;
-	width: 75px;
-	height: 72px;
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
+  width: 75px;
+  height: 72px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: 0 75px 30px;
 }
 
@@ -489,7 +490,7 @@ img {
 }
 
 .button-hotels-search:active {
-  background-color:#756157;
+  background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -550,6 +551,7 @@ img {
   padding: 12px 20px;
   border-radius: 4px 0 0 4px;
   border: 1px solid transparent;
+  flex: 1;
 }
 
 .field:hover {
@@ -579,6 +581,7 @@ img {
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
   cursor: pointer;
+  min-width: 232px;
 }
 
 .button-newsletter:hover {
@@ -623,7 +626,7 @@ img {
   color: #83b3d3;
 }
 
-.social{
+.social {
   fill: currentColor;
 }
 
@@ -650,12 +653,12 @@ img {
 }
 
 .contact-phone:hover {
- color: #756157;
+  color: #756157;
 }
 
 .contact-phone:active {
   color: rgba(117, 97, 87, 0.3);
- }
+}
 
 .footer-website-developer {
   display: flex;
@@ -668,7 +671,7 @@ img {
   color: #000000;
 }
 
-.htmlacademy-link svg{
+.htmlacademy-link svg {
   fill: currentColor;
 }
 
@@ -678,16 +681,16 @@ img {
 
 .htmlacademy-link:active {
   color: rgba(117, 97, 87, 0.3);
- }
+}
 
- .htmlacademy-link:disabled {
+.htmlacademy-link:disabled {
   color: rgba(117, 97, 87, 0.058);
   cursor: default;
- }
+}
 
 /*Модальное окно*/
 
-.modal-container{
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -718,7 +721,7 @@ modal-container-close {
   right: 52px;
   width: 52px;
   height: 52px;
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 30px;
   background-image: url("../images/modal/close.svg");
@@ -750,7 +753,7 @@ modal-container-close {
 
 .modal-form {
   display: grid;
-  grid-template-rows:minmax(48px, auto) minmax(48px, auto) minmax(48px, auto) minmax(48px, auto) minmax(48px, auto) minmax(48px, auto);
+  grid-template-rows: minmax(48px, auto) minmax(48px, auto) minmax(48px, auto) minmax(48px, auto) minmax(48px, auto) minmax(48px, auto);
   grid-template-columns: 137px 1fr;
   align-items: start;
 }
@@ -773,7 +776,7 @@ modal-container-close {
   font-weight: 700;
   border-radius: 4px;
   border: 0;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   padding-left: 20px;
   padding-right: 60px;
   background-image: url(../images/modal/calendar.svg);
@@ -784,10 +787,8 @@ modal-container-close {
 }
 
 .choose-date::placeholder {
-  color:#616161 ;
-  background-color: #F2F2F2;
-  line-height: 24px;
-  font-family: inherit;
+  color: #616161;
+  opacity: 1;
 }
 
 .choose-date[readonly] {
@@ -836,35 +837,35 @@ modal-container-close {
 
 .modal-people {
   min-width: 137px;
- }
-
-.modal-people.children {
- min-width: 131px;
 }
 
-.modal-input-wraper{
+.modal-people.children {
+  min-width: 131px;
+}
+
+.modal-input-wraper {
   background-color: #f2f2f2;
   display: flex;
   border-radius: 4px;
- }
+}
 
- .modal-input-wraper:first-of-type {
+.modal-input-wraper:first-of-type {
   margin-right: auto;
- }
+}
 
-.input-number  {
+.input-number {
   border: 0;
   width: 31px;
   height: 48px;
   border-radius: 4px;
   font-family: inherit;
- font-size: 18px;
- font-weight: 700;
- line-height: 20px;
- text-align: center;
-   background-color: inherit;
-   padding: 0;
- }
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  background-color: inherit;
+  padding: 0;
+}
 
 .modal-input-wraper:last-child {
   margin-right: 0;
@@ -878,7 +879,7 @@ modal-container-close {
   background-color: transparent;
   margin: 0;
   padding: 0;
-  color:#7561574d;
+  color: #7561574d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -897,7 +898,7 @@ modal-container-close {
   outline: auto;
 }
 
-.sign{
+.sign {
   fill: currentColor;
 }
 
@@ -1004,14 +1005,14 @@ modal-container-close {
   height: 9px;
   position: absolute;
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
   display: block;
 }
 
@@ -1041,7 +1042,6 @@ modal-container-close {
 
 .inner-header-title {
   font-size: 60px;
-  font-style: normal;
   font-weight: 700;
   line-height: 78px;
   margin: 0;
@@ -1059,7 +1059,7 @@ modal-container-close {
 }
 
 .breadcrumbs li:not(:last-child)::after {
-  content: "" ;
+  content: "";
   display: inline-block;
   background-image: url("../images/catalog/forward.svg");
   background-repeat: no-repeat;
@@ -1079,16 +1079,16 @@ modal-container-close {
   cursor: pointer;
 }
 
-.breadcrumbs-link:hover{
-  opacity:  0.6;
+.breadcrumbs-link:hover {
+  opacity: 0.6;
 }
 
-.breadcrumbs-link:focus{
+.breadcrumbs-link:focus {
   color: #ffffff;
   outline: none;
 }
 
-.breadcrumbs-link:not(:last-child):active{
+.breadcrumbs-link:not(:last-child):active {
   opacity: 0.3;
 }
 
@@ -1153,10 +1153,10 @@ modal-container-close {
   margin-bottom: 0;
 }
 
-.control{
+.control {
   position: relative;
   display: block;
-  padding-left: 36px ;
+  padding-left: 36px;
   cursor: pointer;
 }
 
@@ -1168,7 +1168,7 @@ modal-container-close {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color:#ffffff;
+  background-color: #ffffff;
   border-radius: 4px;
   margin: 0 16px 0 0;
   left: 0;
@@ -1183,31 +1183,32 @@ modal-container-close {
   opacity: 30%;
 }
 
-.control:disabled + .control-mark {
+.control:disabled+.control-mark {
   opacity: 0.1;
   cursor: default;
 }
+
 .control-label:hover {
-opacity: 60%;
-transition: color 0.25s ease-in-out;
+  opacity: 60%;
+  transition: color 0.25s ease-in-out;
 }
 
 .control-label:active {
-opacity: 30%;
+  opacity: 30%;
 }
 
 .control-label:disabled {
-opacity: 0.1;
-cursor: default;
+  opacity: 0.1;
+  cursor: default;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
+.control-input[type="checkbox"]:checked+.control-mark::before {
   position: relative;
   background-image: url("../images/catalog/check.svg");
   background-repeat: no-repeat;
   background-position: center;
   content: "";
-  width: 12px ;
+  width: 12px;
   height: 10px;
   left: 4px;
   top: 5px;
@@ -1215,19 +1216,20 @@ cursor: default;
 }
 
 /* Радио */
-.control-input[type="radio"] + .control-mark {
+.control-input[type="radio"]+.control-mark {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control-mark::before {
+.control-input[type="radio"]:checked+.control-mark::before {
   position: relative;
   background-color: #3f5e72;
   border-radius: 50%;
   content: "";
-  width: 10px ;
+  width: 10px;
   height: 10px;
-  left: 5px;
-  top: 5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: block;
 }
 
@@ -1255,7 +1257,11 @@ cursor: default;
   border: 2px solid transparent;
 }
 
-.filter-preise[type="number"]:focus:not(:placeholder-shown){
+.filter-preise.preise-min:hover {
+  opacity: 0.9;
+}
+
+.filter-preise[type="number"]:focus:not(:placeholder-shown) {
   border-color: #000000;
   outline: 0;
 }
@@ -1287,15 +1293,15 @@ cursor: default;
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.range-scale{
+.range-scale {
   position: relative;
   height: 4px;
   background-color: #5f686d;
@@ -1335,7 +1341,7 @@ input[type="number"] {
 
 .button-filter-container {
   width: 191px;
-  margin-top: 56px ;
+  margin-top: 56px;
 }
 
 .button-apply {
@@ -1426,7 +1432,7 @@ input[type="number"] {
 
 
 .select-control:disabled {
-  border-color:#000000;
+  border-color: #000000;
   opacity: 30%;
   color: rgba(0, 0, 0, 0.3);
   cursor: default;
@@ -1588,17 +1594,19 @@ input[type="number"] {
 /*кнопка подробнее*/
 
 .hotel-card-description {
- width: 140px;
- height: 36px;
- padding: 8px 16px;
+  width: 140px;
+  height: 36px;
+  padding: 8px 16px;
 }
+
 .hotel-card-description:hover {
-  background-color:#615048;
+  background-color: #615048;
 }
 
 .hotel-card-description:active {
-  background-color:#615048;
+  background-color: #615048;
 }
+
 .hotel-card-description:current {
   background-color: #756157;
   color: #FFFFFF4D;
@@ -1622,7 +1630,7 @@ input[type="number"] {
 }
 
 .hotel-card-button:active {
-  background-color:#82b3d3;
+  background-color: #82b3d3;
   opacity: 0.3;
 }
 
@@ -1646,7 +1654,7 @@ input[type="number"] {
 }
 
 .button-green:active {
-  background-color:#7DB54F;
+  background-color: #7DB54F;
   opacity: 70%;
 }
 
@@ -1725,11 +1733,11 @@ input[type="number"] {
 }
 
 .pagination-link:hover:not(.pagination-current):not(.pagination-text) {
-  background-color:#68a2ca;
+  background-color: #68a2ca;
 }
 
 .pagination-link:active:not(.pagination-current):not(.pagination-text) {
-  background-color:#82b3d3;
+  background-color: #82b3d3;
   opacity: 0.3;
 }
 
