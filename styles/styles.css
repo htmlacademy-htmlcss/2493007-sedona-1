@@ -810,7 +810,7 @@ img {
   line-height: 24px;
   font-weight: 700;
   border-radius: 4px;
-  border: 0;
+  border: 2px solid transparent;
   background-color: #f2f2f2;
   padding-left: 20px;
   padding-right: 60px;
@@ -823,7 +823,7 @@ img {
   grid-column-start: 2;
 }
 
-.choose-date:nth-child(2) {
+.choose-date:nth-of-type(2) {
   grid-row-start: 3 ;
 }
 
@@ -848,7 +848,7 @@ img {
 
 .choose-date:focus {
   outline: none;
-  border: 2px solid #000000;
+  border-color: #000000;
 }
 
 .choose-date:disabled {
@@ -988,24 +988,20 @@ img {
 
 .modal-people {
   min-width: 131px;
-  position: relative;
-  margin-right: 15px;
-  padding-right: 0;
+  padding-right: 26px;
+  display: flex;
+  align-items: start;
 }
 
-.modal-people {
-  min-width: 131px;
-  position: relative;
-  margin-right: 15px;
-  padding-right: 0;
+.children{
+  margin-right: 10px;
 }
 
 .tooltip {
-  position: absolute;
   width: 26px;
   height: 26px;
-  bottom: 11px;
-  left: 59px;
+  display: block;
+  position: relative;
 }
 
 .tooltip-toggle {
@@ -1131,6 +1127,8 @@ img {
   line-height: 21px;
   margin-right: 10px;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .breadcrumbs-link:hover {
@@ -1139,7 +1137,7 @@ img {
 
 .breadcrumbs-link:focus {
   color: #ffffff;
-  outline: none;
+  outline: auto;
 }
 
 .breadcrumbs-link:not(:last-child):active {
@@ -1236,6 +1234,10 @@ img {
 .control:active .control-mark {
   opacity: 30%;
 }
+/*
+.control:focus-visible {
+  outline: auto;
+}*/
 
 .control:disabled+.control-mark {
   opacity: 0.1;
@@ -1255,6 +1257,15 @@ img {
   opacity: 0.1;
   cursor: default;
 }
+/*
+.control-input:focus + .control-mark {
+  outline: auto;
+}*/
+
+.control-input[type="checkbox"]:focus-visible,
+.control-input[type="radio"]:focus-visible {
+   outline: auto;
+  }
 
 .control-input[type="checkbox"]:checked+.control-mark::before {
   position: relative;
@@ -1306,14 +1317,22 @@ img {
   color: #000000;
   width: 143px;
   height: 48px;
-  padding: 12px 20px;
+  padding: 8px 18px;
   padding-right: 45px;
   border: 2px solid transparent;
-  background-color: #f2f2f2;
 }
 
-.filter-preise:hover {
+/*.filter-preise:hover {
   background-color: #e5e5e5;
+}
+
+.filter-preise[type="number"]:focus:not(:placeholder-shown) {
+  border-color: #000000;
+  outline: 0;
+}*/
+
+.preise-range:hover {
+  opacity: 0.8;
 }
 
 .filter-preise[type="number"]:focus:not(:placeholder-shown) {
@@ -1331,6 +1350,7 @@ img {
 
 .preise-range {
   position: relative;
+  background-color: #f2f2f2;
 }
 
 .input-preise span {
