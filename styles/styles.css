@@ -764,7 +764,6 @@ img {
 
 .modal-close-button:active {
   background-color: #e6e6e6;
-  color: #ffffff99;
   opacity: 0.6;
 }
 
@@ -847,6 +846,11 @@ img {
 }
 
 .choose-date:focus {
+  outline: none;
+  border-color: #83b3d3;
+}
+
+.choose-date:not(:placeholder-shown){
   outline: none;
   border-color: #000000;
 }
