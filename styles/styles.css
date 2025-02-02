@@ -767,6 +767,11 @@ img {
   opacity: 0.6;
 }
 
+.modal-close-button:disabled {
+  background-color: #e6e6e6;
+  opacity: 0.3;
+}
+
 .modal-title {
   font-family: inherit;
   font-size: 30px;
@@ -988,6 +993,11 @@ img {
   background-color: #82b3d3;
 }
 
+.button-modal:disabled {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #e5e5e5;
+}
+
 /*Tooltip*/
 
 .modal-people {
@@ -1031,6 +1041,10 @@ img {
 
 .tooltip-toggle:hover {
   background-color: #83b3d39a;
+}
+
+.tooltip-toggle:disabled {
+  opacity: 0.3;
 }
 
 .tooltip-text {
@@ -1146,6 +1160,11 @@ img {
 
 .breadcrumbs-link:not(:last-child):active {
   opacity: 0.3;
+}
+
+.breadcrumbs-link:disabled {
+  opacity: 0.2;
+  cursor: default;
 }
 
 .link-main {
@@ -1421,7 +1440,7 @@ input[type="number"] {
 
 .button-apply:active {
   background-color: #82b3d3;
-  opacity: 30%;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-apply:disabled {
@@ -1665,12 +1684,8 @@ input[type="number"] {
 }
 
 .hotel-card-description:active {
-  background-color: #615048;
-}
-
-.hotel-card-description:current {
   background-color: #756157;
-  color: #FFFFFF4D;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-card-description:disabled {
@@ -1692,7 +1707,7 @@ input[type="number"] {
 
 .hotel-card-button:active {
   background-color: #82b3d3;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-card-button:disabled {
@@ -1716,7 +1731,7 @@ input[type="number"] {
 
 .button-green:active {
   background-color: #7DB54F;
-  opacity: 70%;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-green:disabled {
@@ -1803,7 +1818,13 @@ input[type="number"] {
 
 .pagination-link:active:not(.pagination-current):not(.pagination-text) {
   background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-link:disabled {
+  background-color: #82b2d351;
   opacity: 0.3;
+  cursor: default;
 }
 
 .pagination-current {
