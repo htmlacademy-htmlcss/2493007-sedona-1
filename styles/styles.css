@@ -540,7 +540,6 @@ img {
   padding: 96px 258px 104px 258px;
 }
 
-
 .page-footer-title {
   font-size: 30px;
   font-weight: 700;
@@ -1259,9 +1258,8 @@ img {
 }
 
 .control-input:focus-visible + .control-mark {
-  outline: 3px solid #83B3D3;
+  outline: auto;
 }
-
 
 .control:disabled+.control-mark {
   opacity: 0.1;
@@ -1774,7 +1772,7 @@ input[type="number"] {
 }
 
 .star-4::before {
-  width: 89px;
+  width: 85px;
 }
 
 .star-3::before {
