@@ -1532,7 +1532,6 @@ img {
   position: relative;
   display: block;
   padding-left: 36px;
-  cursor: pointer;
 }
 
 .control-label {
@@ -1549,19 +1548,22 @@ img {
   left: 0;
 }
 
-.control:hover .control-mark {
+.control:hover .control-input:not(:disabled):not(:active)+.control-mark {
   opacity: 60%;
+  cursor: pointer;
   -webkit-transition: color 0.25s ease-in-out;
   -o-transition: color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out;
 }
 
-.control:active .control-mark {
+.control-input:not(:disabled) + .control-mark:active {
   opacity: 30%;
+  cursor: pointer;
 }
 
 .control-input:focus-visible + .control-mark {
   outline: auto;
+  cursor: pointer;
 }
 
 .control-input:disabled + .control-mark {
@@ -1569,20 +1571,21 @@ img {
   cursor: default;
 }
 
-.control-input:hover ~ .control-label {
+.control:hover .control-input:not(:disabled):not(:active) ~ .control-label {
   opacity: 60%;
+  cursor: pointer;
   -webkit-transition: color 0.25s ease-in-out;
   -o-transition: color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out;
 }
 
-.control-input:active ~ .control-label {
+.control-input:not(:disabled) ~ .control-label:active {
   opacity: 30%;
+  cursor: pointer;
 }
 
 .control-input:disabled ~ .control-label {
   opacity: 0.1;
-  cursor: default;
 }
 
 .control-input[type="checkbox"]:checked+.control-mark::before {
