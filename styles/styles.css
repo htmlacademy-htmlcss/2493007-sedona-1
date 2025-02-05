@@ -1556,7 +1556,7 @@ img {
   transition: color 0.25s ease-in-out;
 }
 
-.control-input:not(:disabled) + .control-mark:active {
+.control-input:not(:disabled):active + .control-mark {
   opacity: 30%;
   cursor: pointer;
 }
@@ -1571,7 +1571,7 @@ img {
   cursor: default;
 }
 
-.control:hover .control-input:not(:disabled):not(:active) ~ .control-label {
+.control:hover .control-label {
   opacity: 60%;
   cursor: pointer;
   -webkit-transition: color 0.25s ease-in-out;
@@ -1579,13 +1579,13 @@ img {
   transition: color 0.25s ease-in-out;
 }
 
-.control-input:not(:disabled) ~ .control-label:active {
+.control-input:not(:disabled):active ~ .control-label {
   opacity: 30%;
   cursor: pointer;
 }
-
 .control-input:disabled ~ .control-label {
   opacity: 0.1;
+  cursor: default;
 }
 
 .control-input[type="checkbox"]:checked+.control-mark::before {
